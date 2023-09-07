@@ -17,6 +17,42 @@ body {
     background: #2a75bb;
 }
 
+.menu {
+    width: 700px;
+    height: 600px;
+    background-color: #ffcb05;
+    color: #2a75bb;
+    border-radius: 25px;
+}
+
+.menu-buttons {
+    text-align: center;
+    align-items: center;
+    margin-top: 80px;
+}
+
+.hero-image {
+    width: 700px;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 60px;
+    align-items: center;
+}
+
+.intro {
+    padding-top: 35px;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-align: justify;
+    font-family: 'Pokemon Solid', sans-serif;
+    color: #ffffff;
+    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+
+}
+
 ::selection {
     color: #fff;
     background: #3c5aa6;
@@ -27,6 +63,11 @@ body {
     background: #ffcb05;
     border-radius: 10px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    width: 120px;
+    height: 40px;
 }
 
 .cards,
