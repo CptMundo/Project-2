@@ -31,6 +31,7 @@ body {
     margin-top: 80px;
 }
 
+
 .hero-image {
     width: 700px;
     height: 300px;
@@ -48,14 +49,14 @@ body {
     letter-spacing: 2px;
     text-align: justify;
     font-family: 'Pokemon Solid', sans-serif;
-    color: #ffffff;
-    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+    color: #2a75bb;
+    text-shadow: 1px 0 0 rgb(0, 0, 0), 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
 
 }
 
 ::selection {
     color: #fff;
-    background: #3c5aa6;
+    background: #2a75bb;
 }
 
 .wrapper {

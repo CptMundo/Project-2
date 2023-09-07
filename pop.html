@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Text Box Pop-up Example</title>
+    <style>
+      /* Styles for the pop-up */
+      .popup {
+        display: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: blue;
+        padding: 20px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+        z-index: 1000;
+      }
+    </style>
+  </head>
+
+  <body>
+    <button onclick="showPopup()">Open Text Box</button>
+
+    <!-- The pop-up -->
+    <div id="myPopup" class="popup">
+      <h2>Rules</h2>
+      <p onclick="closePopup()">
+        Title: Quick Pokémon Match Objective: Match as many pairs of Pokémon
+        cards as you can in 60 seconds. How to Play: Flip two Pokémon cards at a
+        time. Matched pairs earn you points and are removed. Keep going until
+        the timer runs out. Scoring: 1 point per matched pair. Winning: Player
+        with the most points at the end wins! Enjoy the speedy fun of Quick
+        Pokémon Match!
+      </p>
+    </div>
+
+    <script>
+      function showPopup() {
+        var popup = document.getElementById("myPopup");
+        popup.style.display = "block";
+      }
+
+      function closePopup() {
+        var popup = document.getElementById("myPopup");
+        popup.style.display = "none";
+      }
+    </script>
+  </body>
+</html>
