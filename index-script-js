@@ -1,20 +1,14 @@
-function showPopup() {
-            var popup = document.getElementById('popup');
-            popup.style.display = 'block';
-        }
+const button = document.getElementById("popup-button");
+const popup = document.getElementById("popup");
+const closeButton = document.getElementById("close-button");
+const overlay = document.getElementById("overlay");
 
-function closePopup() {
-            var popup = document.getElementById('popup');
-            popup.style.display = 'none';
+button.addEventListener("click", function () {
+    popup.style.display = "block";
+    overlay.style.display = "block"; // Show the overlay
+});
 
-
-function showPopup() {
-        var popup = document.getElementById("myPopup");
-        popup.style.display = "block";
-      }
-
-function closePopup() {
-        var popup = document.getElementById("myPopup");
-        popup.style.display = "none";
-      }
-    
+closeButton.addEventListener("click", function () {
+    popup.style.display = "none";
+    overlay.style.display = "none"; // Hide the overlay
+});
